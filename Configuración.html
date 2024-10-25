@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Configuración</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="settings-container">
+        <h2>Configuración</h2>
+        <form id="settingsForm">
+            <div class="setting-option">
+                <label for="notifications" class="switch-label">
+                    <span>Notificaciones</span>
+                    <label class="switch">
+                        <input type="checkbox" id="notifications">
+                        <span class="slider"></span>
+                    </label>
+                </label>
+            </div>
+
+            <div class="setting-option">
+                <label for="language">Idioma</label>
+                <select id="language">
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                    <option value="fr">Francés</option>
+                </select>
+            </div>
+
+            <div class="setting-option">
+                <label for="privacy">Privacidad</label>
+                <select id="privacy">
+                    <option value="public">Público</option>
+                    <option value="private">Privado</option>
+                    <option value="custom">Personalizado</option>
+                </select>
+            </div>
+
+            <div class="setting-option">
+                <label for="notificationsEmail" class="switch-label">
+                    <span>Notificaciones por Email</span>
+                    <label class="switch">
+                        <input type="checkbox" id="notificationsEmail">
+                        <span class="slider"></span>
+                    </label>
+                </label>
+            </div>
+
+            <div class="setting-option">
+                <button type="button" id="saveSettings">Guardar Cambios</button>
+            </div>
+        </form>
+        <p id="statusMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

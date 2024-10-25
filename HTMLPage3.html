@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentaRodados Sv</title>
+    <!-- Enlaces a los estilos externos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="Cspage3.css"> <!-- Vincula el archivo CSS externo -->
+</head>
+
+<body>
+    <!-- Barra de navegación fija en la parte superior -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">RentaRodados Sv</a>
+            <div class="social-buttons me-auto">
+                <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+                <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a>
+                <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Categorias.html">Categorías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Anuncios.html">Mis Anuncios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profileBtn">Perfil</a>
+                    </li>
+                    <!-- Barra de búsqueda -->
+                    <li class="nav-item">
+                        <form class="search-bar d-flex ms-3">
+                            <input type="text" placeholder="Buscar productos...">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Panel lateral del perfil -->
+    <div id="profileSidebar" class="profile-sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeProfileSidebar()">&times;</a>
+        <a href="mi-perfil.html">Mi Perfil</a> <!-- Redirige a la página mi-perfil.html -->
+        <a href="Configuracion.html">Configuracion</a> <!-- Redirige a la página configuracion.html -->
+        <a href="#">Cerrar Sesión</a>
+    </div>
+
+
+    <!-- Contenedor de productos -->
+    <div class="container" style="margin-top: 100px;">
+        <div class="row">
+            <!-- Tarjetas de productos -->
+            <div class="col-md-4 mb-4">
+                <div class="card futuristic-card">
+                    <img src="https://images.bild.de/5c659909d0df99000186ac23/91e3ca8cbc2d363232698b87a71af5e6,69945d15?w=992" alt="Producto 1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Corolla 2021 - Vehículo 1</h5>
+                        <p class="card-text">$25.00</p>
+                        <a href="buyProduct1.html" class="btn btn-primary btn-block">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card futuristic-card">
+                    <img src="https://th.bing.com/th/id/R.f5214ad136032265e9cd7218d3bb21dc?rik=U2YO8Ihj48hfhw&pid=ImgRaw&r=0" alt="Producto 2" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Nissan Sentra 2023 - Vehículo 2</h5>
+                        <p class="card-text">$35.00</p>
+                        <a href="buyProduct2.html" class="btn btn-primary btn-block">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card futuristic-card">
+                    <img src="https://tfltruck.com/wp-content/uploads/2021/03/2022-nissan-frontier-pro4x-front.jpg" alt="Producto 3" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Nissan Frontier 2022 - Vehículo 3</h5>
+                        <p class="card-text">$45.00</p>
+                        <a href="buyProduct3.html" class="btn btn-primary btn-block">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nueva Fila -->
+            <div class="col-md-4 mb-4">
+                <div class="card futuristic-card">
+                    <img src="https://www.autosrodando.com/wp-content/uploads/2023/03/nissan-versa_5.jpg" alt="Producto 4" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Nissan Versa 2024 - Vehículo 4</h5>
+                        <p class="card-text">$35.00</p>
+                        <a href="buyProduct4.html" class="btn btn-primary btn-block">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card futuristic-card">
+                    <img src="https://audiocityusa.com/shop/images/D/mrr-wheels-fs01-gloss-black-rims-audiocityusa-08-db71b76262.jpg" alt="Producto 5" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Chevrolet Camaro 2024 - Vehículo 5</h5>
+                        <p class="card-text">$450.00</p>
+                        <a href="buyProduct5.html" class="btn btn-primary btn-block">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card futuristic-card">
+                    <img src="https://cdn.motor1.com/images/mgl/eoR1bP/s3/nueva-hilux-srx-2.jpg" alt="Producto 6" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> Toyota Hilux 2024 - Vehículo 6</h5>
+                        <p class="card-text">$70.00</p>
+                        <a href="buyProduct6.html" class="btn btn-primary btn-block">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nueva Fila 2 -->
+            <div class="col-md-4">
+                <div class="card futuristic-card">
+                    <img src="https://www.thedrive.com/uploads/2022/10/26/2023CTR-hero-2.jpg?auto=webp&auto=webp&optimize=high&quality=70&width=1920" alt="Producto 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Honda Civic 2023 - Vehículo 7</h5>
+                        <p class="card-text">$55.00</p>
+                        <a href="buyProduct7.html" class="btn btn-primary btn-block">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card futuristic-card">
+                    <img src="https://i.blogs.es/d30830/kia-soul-2020-mexico_/840_560.jpg" alt="Producto 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Kia Soul 2020 - Vehículo 8</h5>
+                        <p class="card-text">$35.00</p>
+                        <a href="buyProduct8.html" class="btn btn-primary btn-block">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card futuristic-card">
+                    <img src="https://i.gaw.to/vehicles/photos/40/23/402300-2021-kia-forte.jpg" alt="Producto 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Kia Forte 2021 - Vehículo 9</h5>
+                        <p class="card-text">$35.00</p>
+                        <a href="buyProduct9.html" class="btn btn-primary btn-block">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nueva Fila 3 -->
+            <div class="col-md-4">
+                <div class="card futuristic-card">
+                    <img src="https://2024toyota.com/wp-content/uploads/2022/06/2024-Toyota-4Runner-Fornt-View.png" alt="Producto 10">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota 4runner 2024 - Vehículo 10</h5>
+                        <p class="card-text">$110.00</p>
+                        <a href="buyProduct10.html" class="btn btn-primary btn-block">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card futuristic-card">
+                    <img src="https://www.motortrend.com/uploads/sites/5/2019/06/2019-Jeep-Wrangler-Unlimited-Rubicon-front-three-quarter-1-1.jpg?fit=around|875:492" alt="Producto 11">
+                    <div class="card-body">
+                        <h5 class="card-title">Jeep Weangler 2019 - Vehículo 11</h5>
+                        <p class="card-text">$120.00</p>
+                        <a href="buyProduct11.html" class="btn btn-primary btn-block">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card futuristic-card">
+                    <img src="https://www.autonews-mag.com/images/az8ahefeoelez4.jpg" alt="Producto 12">
+                    <div class="card-body">
+                        <h5 class="card-title">Mercedes-AMG G63 2022 - Vehículo 12</h5>
+                        <p class="card-text">$150.00</p>
+                        <a href="buyProduct12.html" class="btn btn-primary btn-block">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Puedes más tarjetas -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 RentaRodados Sv. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Función para abrir el panel lateral del perfil
+        function openProfileSidebar() {
+            document.getElementById("profileSidebar").style.width = "250px";
+        }
+
+        // Función para cerrar el panel lateral del perfil
+        function closeProfileSidebar() {
+            document.getElementById("profileSidebar").style.width = "0";
+        }
+
+        // Abrir el perfil cuando se hace clic en el botón de perfil
+        document.getElementById("profileBtn").onclick = openProfileSidebar;
+
+        // Cerrar el panel lateral automáticamente cuando el puntero salga de la barra lateral
+        document.getElementById("profileSidebar").addEventListener('mouseleave', function () {
+            closeProfileSidebar();
+        });
+    </script>
+</body>
+
+</html>
